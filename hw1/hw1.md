@@ -187,7 +187,7 @@ To do this, you'll need to clone the 344 repository by issuing the following com
 ```sh
 $ cd [directory that you want to put your 344 assignments]
 $ git clone git@gitlab.cs.washington.edu:cse344-au19/hw1/cse344-hw1-[your CSE username].git
-$ cd cse344-[your CSE username]
+$ cd cse344-hw1-[your CSE username]
 ```
 
 This will make a complete replica of the repository locally. If you get an error that looks like:
