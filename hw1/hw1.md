@@ -6,7 +6,7 @@
 
 **Assigned date:** September 25, 2019
 
-**Due date:** October 2, 2019. You have 1 week for this homework.
+**Due date:** October 2, 2019 11 pm. You have 1 week for this homework.
 
 **Questions:** Make sure your post them on the [discussion board](https://us.edstem.org/courses/130/).
 
@@ -165,7 +165,7 @@ for any OS. For Eclipse, detailed instructions can be found at
 We have created a git repository that you will use to commit and submit your the homework assignments. 
 This repository is hosted on the [CSE's GitLab](https://gitlab.cs.washington.edu) , 
 and you can view it by visiting the GitLab website at 
-`https://gitlab.cs.washington.edu/cse344-2019au/hw1/cse344-hw1-[your CSE username]`.
+`https://gitlab.cs.washington.edu/cse344-au19/hw1/cse344-hw1-[your CSE username]`.
 
 We will create a **new repository** for you for each of the homework assignments this quarter, 
 so if you don't see this repository or are unable to access it, let us know immediately!
@@ -186,7 +186,7 @@ To do this, you'll need to clone the 344 repository by issuing the following com
 
 ```sh
 $ cd [directory that you want to put your 344 assignments]
-$ git clone git@gitlab.cs.washington.edu:cse344-2019au/hw1/cse344-hw1-[your CSE username].git
+$ git clone git@gitlab.cs.washington.edu:cse344-au19/hw1/cse344-hw1-[your CSE username].git
 $ cd cse344-[your CSE username]
 ```
 
@@ -213,24 +213,24 @@ $ git remote -v
 
 There is one more level of indirection to consider.
 When we created your `cse344-hw1-[your CSE username]` repository, we forked a copy of it from another 
-repository `cse344-2019au/source/hw1`.  In `git` parlance, this "original repository" referred to as an `upstream` repository.
+repository `cse344-au19/source/hw1`.  In `git` parlance, this "original repository" referred to as an `upstream` repository.
 When we release bug fixes, we will put our changes into the upstream repository, and you will need to be able to pull those changes into your own.  See [the documentation](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) for more details on working with remotes -- they can be confusing!
 
 In order to be able to pull the changes from the upstream repository, we'll need to record a link to the `upstream` remote in your own local repository:
 
 ```sh
 $ # Note that this repository does not have your username as a suffix!
-$ git remote add upstream git@gitlab.cs.washington.edu:cse344-2019au/source/hw1.git
+$ git remote add upstream git@gitlab.cs.washington.edu:cse344-au19/source/hw1.git
 ```
 
 For reference, your final remote configuration should read like the following when it's setup correctly:
 
 ```sh
 $ git remote -v
-  origin  git@gitlab.cs.washington.edu:cse344-2019au/hw1/cse344-hw1-[your CSE username].git (fetch)
-  origin  git@gitlab.cs.washington.edu:cse344-2019au/hw1/cse344-hw1-[your CSE username].git (push)
-  upstream    git@gitlab.cs.washington.edu:cse344-2019au/source/hw1.git (fetch)
-  upstream    git@gitlab.cs.washington.edu:cse344-2019au/source/hw1.git (push)
+  origin  git@gitlab.cs.washington.edu:cse344-au19/hw1/cse344-hw1-[your CSE username].git (fetch)
+  origin  git@gitlab.cs.washington.edu:cse344-au19/hw1/cse344-hw1-[your CSE username].git (push)
+  upstream    git@gitlab.cs.washington.edu:cse344-au19/source/hw1.git (fetch)
+  upstream    git@gitlab.cs.washington.edu:cse344-au19/source/hw1.git (push)
 ```
 
 In this configuration, the `origin` (default) remote links to **your** repository 
@@ -256,7 +256,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 286 bytes | 0 bytes/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
-To git@gitlab.cs.washington.edu:cse344-2019au/hw1/cse344-hw1-[your CSE username].git
+To git@gitlab.cs.washington.edu:cse344-au19/hw1/cse344-hw1-[your CSE username].git
    cb5be61..9bbce8d  master -> master
 ```
 
@@ -284,7 +284,7 @@ remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (3/3), done.
 remote: Total 3 (delta 2), reused 0 (delta 0)
 Unpacking objects: 100% (3/3), done.
-From gitlab.cs.washington.edu:cse344-2019au/source/hw1.git
+From gitlab.cs.washington.edu:cse344-au19/source/hw1.git
  * branch            master     -> FETCH_HEAD
    7f81148..b0c4a3e  master     -> upstream/master
 Merge made by the 'recursive' strategy.
@@ -352,7 +352,7 @@ Git is a distributed version control system. This means everything operates offl
 The bad thing is that you may **forget to `git push` your changes**. This is why we strongly, strongly suggest that you **check GitLab to be sure that what you want us to see matches up with what you expect**.  As a second sanity check, you can re-clone your repository in a different directory to confirm the changes:
 
 ```sh
-$ git clone git@gitlab.cs.washington.edu:cse344-2019au/hw1/cse344-hw1-[your CSE username].git confirmation_directory
+$ git clone git@gitlab.cs.washington.edu:cse344-au19/hw1/cse344-hw1-[your CSE username].git confirmation_directory
 $ cd confirmation_directory
 $ # ... make sure everything is as you expect ...
 ```
