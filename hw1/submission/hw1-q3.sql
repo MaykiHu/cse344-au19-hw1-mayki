@@ -1,10 +1,3 @@
-CREATE TABLE MyRestaurants(
-        Name varchar(20),
-        Cuisine varchar(20),
-        Distance int,
-        LastVisit varchar(10),
-        Love int
-);
 INSERT INTO MyRestaurants VALUES('Pho Hoa', 'Vietnamese', 5, '2019-10-01', 1);
 INSERT INTO MyRestaurants VALUES('Canton Wonton House', 'Chinese', 5, '2019-09-29', 1);
 INSERT INTO MyRestaurants VALUES('Oasis Tea Zone', NULL, 5, '2019-09-30', NULL);
